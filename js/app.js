@@ -6,13 +6,14 @@ var hotel = {
     foto: "./img/Hotel1.png"
 };
 
-var rating = prompt("Indique puntuación del 1 al 5:");
-var IsAnonymus = confirm("¿Quiere que la reseña sea anoónima?");
-
 document.getElementById("name-hotel").innerHTML = "Hotel " + hotel["name"];
 document.getElementById("location-hotel").innerHTML = "Ubicado en " + hotel["location"];
 document.getElementById("img-hotel").src = hotel["foto"];
+
+var rating = prompt("Indique puntuación del 1 al 5:");
 document.getElementById("rating").innerHTML = rating + " Estrellas";
+
+var IsAnonymus = confirm("¿Quiere que la reseña sea anoónima?");
 document.getElementById("anonymous").checked= IsAnonymus;
 
 FIN PRIMERA PARTE DEL EJERCICIO */
@@ -40,11 +41,12 @@ var estrellas = {
 }
 
 var hotelSeleccionado = prompt("Indique hotel sobre el que quiere hacer la reseña: Melia o Fuerte");
-var rating = prompt("Indique puntuación: una, dos, tres, cuatro o cinco");
-var IsAnonymus = confirm("¿Quiere que la reseña sea anónima?");
-
 document.getElementById("name-hotel").innerHTML = "Hotel " + hoteles[hotelSeleccionado].name;
 document.getElementById("location-hotel").innerHTML = "Ubicado en " + hoteles[hotelSeleccionado].location;
 document.getElementById("img-hotel").src = hoteles[hotelSeleccionado].foto;
+
+var rating = prompt("Indique puntuación: una, dos, tres, cuatro o cinco");
 document.getElementById("rating").innerHTML = estrellas[rating];
+
+var IsAnonymus = confirm("¿Quiere que la reseña sea anónima?");
 document.getElementById("anonymous").checked= IsAnonymus;
