@@ -41,7 +41,7 @@ var estrellas = {
 
 var hotelSeleccionado = prompt("Indique hotel sobre el que quiere hacer la reseña: Melia o Fuerte");
 var rating = prompt("Indique puntuación: una, dos, tres, cuatro o cinco");
-var IsAnonymus = confirm("¿Quiere que la reseña sea anoónima?");
+var IsAnonymus = confirm("¿Quiere que la reseña sea anónima?");
 
 document.getElementById("name-hotel").innerHTML = "Hotel " + hoteles[hotelSeleccionado].name;
 document.getElementById("location-hotel").innerHTML = "Ubicado en " + hoteles[hotelSeleccionado].location;
